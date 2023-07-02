@@ -6,7 +6,7 @@ I took this interesting Embedding learning from Great [RabbitHoleSyndrome](https
 
 Supper Happy to start my learning journey in Hugging Face. Never used in my previous projects, but always wanted to try it out. This is a great opportunity to use it in Embedding Learning. 🤗
 
-## 1. Hungface inference API approach to generateing embeddings
+## 1. Hugging face inference API approach to generateing embeddings
 
 `npm install @huggingface/inference dotenv`
 There are different model you can choose, for example `sentence-transformers/paraphrase-MiniLM-L6-v2`, `ggrn/e5-small-v2`
