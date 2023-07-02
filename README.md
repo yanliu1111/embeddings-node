@@ -1,6 +1,6 @@
 # Embedding Learning
 
-I took this interesting Embedding learning from Great [RabbitHoleSyndrome](https://https://www.youtube.com/watch?v=QdDoFfkVkcw&t=2317s&ab_channel=RabbitHoleSyndrom) channel.
+I took this interesting Embedding learning from Great [RabbitHoleSyndrome](https://www.youtube.com/watch?v=QdDoFfkVkcw&ab_channel=RabbitHoleSyndrome) channel.
 
 ## 📚 Learning Notes
 
@@ -40,3 +40,11 @@ Install [onnx](https://onnxruntime.ai/) runtime for transformers.js <br>
 `npm i @xenova/transformers`
 
 Covert your model to ONNX format. You don't have to wait Xenova has created 🙅‍♀️ Check [Custom usage](https://huggingface.co/docs/transformers.js/custom_usage#convert-your-models-to-onnx) in Transformers.js documentation.
+
+## 3. Embeddings in the browser
+
+In `index.html`, the button was disable by default. The reason is the async logic to construct embeddings pipline takes time. It will take the longest the very first time because it has to load the hugging face model from hugging face, but then what Transformer.js actually does for us here is they will cache that model in the browser. So that subsequent reload that model is actually already avaibale which is really cool for any machine learning related application. These models can be quite huge. Even `all-MiniLM-L6-v2` is quite small relative to the other ones especailly the quantized one is 20 MB, but from a browser context 20MB is still quite a bit. The dev really want to load things as quickly as possible. That cache is important.
+<br>
+<br>
+<br>
+💚 Always happy learning following the [RabbitHoleSyndrome](https://www.youtube.com/@RabbitHoleSyndrome) channel. 🐰 Highly recommend 👍.
