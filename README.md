@@ -2,6 +2,8 @@
 
 I took this interesting Embedding learning from Great [RabbitHoleSyndrome](https://www.youtube.com/watch?v=QdDoFfkVkcw&ab_channel=RabbitHoleSyndrome) channel.
 
+Learning Embeddings can be very useful for many NLP tasks, such as Search (a lot people use for it, I practiced it in previous [embedding project](https://github.com/yanliu1111/ChatGPT-API-embeddings-Supabase)), but things like clusting, classification, re-ranking, retrieval and so on. For example in retrieval, you can use embeddings to find similar texts. In this tutorial, compare different models and see how they perform on a semantic comparison task.
+
 ## 📚 Learning Notes
 
 Supper Happy to start my learning journey in Hugging Face. Never used in my previous projects, but always wanted to try it out. This is a great opportunity to use it in Embedding Learning. 🤗
